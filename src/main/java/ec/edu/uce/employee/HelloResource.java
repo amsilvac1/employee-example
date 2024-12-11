@@ -21,15 +21,15 @@ public class HelloResource {
     AddressService addressService;
 
     //crear un empleado
-//    @GET
-//    @Produces("text/plain")
-//    @Path("/get")
-//    public String getEmployee() {
-//        Employee employee = new Employee();
-//        employee.setName("Carlos");
-//        employeeService.save(employee);
-//        return "hola mundo";
-//    }
+    @GET
+    @Produces("text/plain")
+    @Path("/get")
+    public String getEmployee() {
+        Employee employee = new Employee();
+        employee.setName("Carlos");
+        employeeService.save(employee);
+        return "hola mundo";
+    }
 
     //encontrar un empleado por id
     @GET
